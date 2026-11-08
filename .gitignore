@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Local data: never commit. Your real data lives outside the repo in ~/.loop/,
+# but these catch anything accidentally created inside it.
+# USDA downloads + the built food database:
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+# a data folder created inside the repo by mistake:
+.loop/
+# the About me export and the background log:
+profile.md
+loop.log
+
+# Secrets and tokens
+.env
+.env.*
+# calendar exports / secret iCal downloads:
+*.ics
+garmin_tokens/
+*token*.json
+*.pem
+*.key
+secrets/
+
+# Film assets (copyrighted recordings, footage): keep them out of the repo
+*.mp3
+*.m4a
+*.wav
+*.aiff
+*.mov
+*.mp4
+
+# How we built this: the story quotes your prompts; keep it private unless you choose to publish
+howwebuilt/chapters/
+howwebuilt/decisions/
+howwebuilt/sources.json
+
+# Work in progress: private notes, plans and drafts, never published
+work-in-progress/
+# the story site's list of sessions left out of the public story
+howwebuilt/excluded.json
